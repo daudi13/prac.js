@@ -10,4 +10,97 @@ body {
   font-family: 'Open Sans', sans-serif;
   height: 100vh;
 }
+
+.slider-container {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.slider-container .left-slider {
+  position: absolute;
+  height: 100%;
+  width: 35%;
+  top: 0;
+  left: 0;
+  -webkit-transition: -webkit-transform 0.4s ease-in-out;
+  transition: -webkit-transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out;
+  transition: transform 0.4s ease-in-out, -webkit-transform 0.4s ease-in-out;
+}
+
+.slider-container .left-slider div {
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.slider-container .left-slider div p {
+  padding: 40px;
+}
+
+.slider-container .right-slider {
+  position: absolute;
+  height: 100%;
+  width: 65%;
+  top: 0;
+  left: 35%;
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.slider-container .right-slider div {
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.slider-container .action-buttons button {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  padding: 13px;
+  border: none;
+  color: #555;
+  font-size: 18px;
+  z-index: 100;
+  cursor: pointer;
+}
+
+.slider-container .action-buttons button:focus {
+  outline: none;
+}
+
+.slider-container .action-buttons button:hover {
+  color: #222;
+}
+
+.slider-container .action-buttons .left-btn {
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  border-bottom-left-radius: 5px;
+}
+
+.slider-container .action-buttons .right-btn {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%);
+  border-bottom-right-radius: 5px;
+}
 /*# sourceMappingURL=main.css.map */

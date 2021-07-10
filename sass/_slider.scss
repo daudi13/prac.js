@@ -1,1 +1,78 @@
-.slider-container
+.slider-container {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+
+    .left-slider {
+        position: absolute;
+        height: 100%;
+        width: 35%;
+        top: 0;
+        left: 0;
+        transition: transform 0.4s ease-in-out;
+
+        div {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                padding: 40px;
+            }
+        }
+    }
+
+    .right-slider {
+        position: absolute;
+        height: 100%;
+        width: 65%;
+        top: 0;
+        left: 35%;
+        transition: transform .5s ease-in-out;
+
+        div {
+            background-size: cover;
+            background-position: center center;
+            height: 100%;
+            background-repeat: no-repeat;
+            width: 100%;
+        }
+    }
+
+    .action-buttons{
+        button{
+            position: absolute;
+            top: 50%;
+            left: 35%;
+            padding: 13px;
+            border: none;
+            color: #555;
+            font-size: 18px;
+            z-index: 100;
+            cursor: pointer;
+
+            &:focus {
+                outline: none;
+            }
+
+            &:hover {
+                color: #222;
+            }
+        }
+
+
+        .left-btn {
+            transform: translateX(-100%);
+            border-bottom-left-radius: 5px;
+        }
+
+        .right-btn {
+            transform: translateY(-100%);
+            border-bottom-right-radius: 5px;
+        }
+    }
+}
