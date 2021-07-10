@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "ACAA,OAAO,CAAC,mFAAI;AAEZ,AAAA,CAAC,CAAC;EACE,MAAM,EAAE,CAAC;EACT,OAAO,EAAE,CAAC;EACV,UAAU,EAAE,UAAU;CACzB;;AAED,AAAA,IAAI,CAAC;EACD,WAAW,EAAC,uBAAuB;EACnC,MAAM,EAAE,KAAK;CAChB",
+    "sources": [
+        "../../sass/main.scss",
+        "../../sass/_default.scss",
+        "../../sass/_slider.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
